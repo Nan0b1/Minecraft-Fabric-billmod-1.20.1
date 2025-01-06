@@ -12,9 +12,11 @@ import net.nanobi.billmod.Billmod;
 
 public class ModItem {
     public static final Item URANIUM = registerItem("uranium", new Item(new FabricItemSettings()));
+    public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(URANIUM);
+        entries.add(URANIUM_INGOT);
     }
 
     private static Item registerItem(String name, Item item){
