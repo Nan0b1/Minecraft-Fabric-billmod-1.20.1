@@ -2,6 +2,7 @@ package net.nanobi.billmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nanobi.billmod.item.ModItem;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,8 @@ public class Billmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Fabric world it's Billmod!!!");
+		ModItem.registerModItems();
+
 	}
 }
