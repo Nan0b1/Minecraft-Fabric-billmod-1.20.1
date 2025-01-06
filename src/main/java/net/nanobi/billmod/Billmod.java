@@ -2,7 +2,9 @@ package net.nanobi.billmod;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.nanobi.billmod.item.ModItem;
+import net.nanobi.billmod.block.ModBlocks;
+import net.nanobi.billmod.item.ModItemGroups;
+import net.nanobi.billmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +15,9 @@ public class Billmod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world it's Billmod!!!");
-		ModItem.registerModItems();
+		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 
 	}
 }

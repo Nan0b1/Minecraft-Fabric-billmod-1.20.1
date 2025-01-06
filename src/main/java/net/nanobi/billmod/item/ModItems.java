@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.nanobi.billmod.Billmod;
 
-public class ModItem {
+public class ModItems {
     public static final Item URANIUM = registerItem("uranium", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));
 
@@ -27,6 +27,6 @@ public class ModItem {
     public static void registerModItems() {
         Billmod.LOGGER.info("Registering Mod Items for " + Billmod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItem::addItemsToIngredientItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

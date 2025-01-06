@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "billmod:block/uranium_block"
+    }
+  }
+}

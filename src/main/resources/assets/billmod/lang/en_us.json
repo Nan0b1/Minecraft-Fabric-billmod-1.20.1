@@ -1,3 +1,6 @@
 {
-  "item.billmod.uranium": "Uranium"
+  "item.billmod.uranium": "Uranium",
+  "item.billmod.uranium_ingot": "Uranium Ingot",
+
+  "itemgroup.gravity": "Gravity Falls mod"
 }
