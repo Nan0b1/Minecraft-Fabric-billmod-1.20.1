@@ -24,7 +24,7 @@ public class ModBlocks {
         return Registry.register(Registries.ITEM, new Identifier(Billmod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
-
+//test
     public  static void registerModBlocks() {
         Billmod.LOGGER.info("registering ModBlocks for " + Billmod.MOD_ID);
     }
